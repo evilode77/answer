@@ -1,11 +1,9 @@
 # answer
 开发工程师测试题
 ## 一
-###
+```
 import pandas as pd
 import requests
-
-
 def getRes(page):
     headers = {
         'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -56,9 +54,9 @@ if __name__ == '__main__':
     df.to_csv("result.csv", index=False,
               header=['ISIN', 'Bond Code', 'Issuer', 'Bond Type', 'Issue Date', 'Latest Rating'])
 
-###
+```
 ## 二
-###
+```
 import re
 
 def reg_search(text, regex_list):
@@ -85,4 +83,4 @@ regex_list = [{
 
 print(reg_search(text, regex_list))
 
-###
+```
